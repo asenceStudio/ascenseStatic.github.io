@@ -554,15 +554,15 @@
                 
                 const authorBadge = document.createElement('span');
                 authorBadge.className = 'exam-badge';
-                authorBadge.textContent = '👤 ' + (exam.author || 'Anónimo');
+                authorBadge.textContent = ' ' + (exam.author || 'Anónimo');
 
                 const durationBadge = document.createElement('span');
                 durationBadge.className = 'exam-badge';
-                durationBadge.textContent = '⏱️ ' + (exam.duration || 'N/A') + ' min';
+                durationBadge.textContent = ' ' + (exam.duration || 'N/A') + ' min';
 
                 const deadlineBadge = document.createElement('span');
                 deadlineBadge.className = 'exam-badge';
-                deadlineBadge.textContent = '📅 ' + deadline;
+                deadlineBadge.textContent = ' ' + deadline;
 
                 metaDiv.appendChild(authorBadge);
                 metaDiv.appendChild(durationBadge);
@@ -571,7 +571,7 @@
                 if (exam.status) {
                     const statusBadge = document.createElement('span');
                     statusBadge.className = 'exam-badge';
-                    statusBadge.textContent = '📊 ' + exam.status;
+                    statusBadge.textContent = ' ' + exam.status;
                     metaDiv.appendChild(statusBadge);
                 }
 
